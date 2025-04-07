@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #1a1b4b;
+    --secondary-color: #9370DB;
+    --success-color: #00ff9d;
+    --danger-color: #ff5677;
+    --warning-color: #ffd369;
+    --background-color: #0a0a2e;
+    --text-color: #ffffff;
+    --border-color: #2a2a5a;
+    --card-background: #141453;
+    --hover-color: #2a2a7a;
+    --grid-header-bg: #1e1e6e;
+    --grid-row-hover: #2a2a7a;
+    --item-background: #232368;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    background-image: url('backgrounds/Galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(20, 20, 83, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 20px rgba(147, 112, 219, 0.2);
+}
+
+/* Grid and Table Styles */
+.weekly-container, .earnings-container {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 15px rgba(147, 112, 219, 0.1);
+}
+
+.grid-header, .earnings-header {
+    background-color: var(--grid-header-bg);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.grid-row, .earnings-row {
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--card-background);
+    transition: all 0.3s ease;
+}
+
+.grid-row:hover, .earnings-row:hover {
+    background-color: var(--grid-row-hover);
+    box-shadow: 0 0 10px rgba(147, 112, 219, 0.2);
+}
+
+/* Form Elements */
+input, select, textarea {
+    background-color: var(--item-background);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(147, 112, 219, 0.3);
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons and Interactive Elements */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(147, 112, 219, 0.3);
+}
+
+.points-badge {
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 0 0 10px rgba(147, 112, 219, 0.2);
+}
+
+.chores-container {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 15px rgba(147, 112, 219, 0.1);
+}
+
+.chore-item, .account-item {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.chore-item:hover, .account-item:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(147, 112, 219, 0.2);
+}
+
+.edit-btn {
+    background-color: var(--warning-color);
+    color: #1a1b4b;
+}
+
+.delete-btn {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.calculate-btn, .theme-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+}
+
+.calculate-btn:hover, .theme-btn:hover {
+    background-color: #8360c9;
+}
+
+/* Earnings Cells */
+.earnings-cell.earnings {
+    color: var(--success-color);
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
+}
+
+.earnings-cell.tithing {
+    color: var(--danger-color);
+    text-shadow: 0 0 10px rgba(255, 86, 119, 0.3);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    accent-color: var(--secondary-color);
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(147, 112, 219, 0.2);
+}
+
+/* Text Elements */
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+} 

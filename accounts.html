@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management - Chore Handler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes/default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="accounts.html" class="active"><i class="fas fa-users"></i> Accounts</a></li>
+            <li><a href="daily.html"><i class="fas fa-calendar-check"></i> Daily Check</a></li>
+            <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Account Management</h1>
+            <div class="add-account">
+                <input type="text" id="newAccountName" placeholder="Enter account name...">
+                <button id="addAccountButton"><i class="fas fa-plus"></i> Add Account</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="accounts-container">
+                <h2>Family Members</h2>
+                <ul id="accountsList">
+                    <!-- Accounts will be added here dynamically -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="accounts.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html> 

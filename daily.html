@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Check - Chore Handler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes/default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Chores</a></li>
+            <li><a href="accounts.html"><i class="fas fa-users"></i> Accounts</a></li>
+            <li><a href="daily.html" class="active"><i class="fas fa-calendar-check"></i> Daily Check</a></li>
+            <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Daily Check</h1>
+            <button id="resetButton" class="reset-btn">Reset All Data</button>
+        </header>
+        
+        <main>
+            <div class="weekly-container">
+                <div class="weekly-grid">
+                    <div class="grid-header">
+                        <div class="header-cell chore-column">Chore</div>
+                        <div class="header-cell assigned-column">Assigned To</div>
+                        <div class="header-cell day-column">Mon</div>
+                        <div class="header-cell day-column">Tue</div>
+                        <div class="header-cell day-column">Wed</div>
+                        <div class="header-cell day-column">Thu</div>
+                        <div class="header-cell day-column">Fri</div>
+                        <div class="header-cell day-column">Sat</div>
+                    </div>
+                    <div id="weeklyChoresList">
+                        <!-- Chores will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculate-section">
+                <button id="calculateButton" class="calculate-btn">Calculate Weekly Summary</button>
+            </div>
+
+            <div id="earningsContainer" class="earnings-container" style="display: none;">
+                <h2>Weekly Earnings Summary</h2>
+                <div class="earnings-grid">
+                    <div class="earnings-header">
+                        <div class="header-cell">Person</div>
+                        <div class="header-cell">Earnings</div>
+                        <div class="header-cell">Tithing (10%)</div>
+                        <div class="header-cell">Final Amount</div>
+                    </div>
+                    <div id="earningsList">
+                        <!-- Earnings will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="daily.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html> 

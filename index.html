@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chore Handler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes/default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Chores</a></li>
+            <li><a href="accounts.html"><i class="fas fa-users"></i> Accounts</a></li>
+            <li><a href="daily.html"><i class="fas fa-calendar-check"></i> Daily Check</a></li>
+            <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Chore Handler</h1>
+            <div class="add-chore">
+                <input type="text" id="newChore" placeholder="Add a new chore...">
+                <input type="number" id="chorePoints" placeholder="Points" min="1" value="1">
+                <button id="addButton"><i class="fas fa-plus"></i></button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="chores-container">
+                <h2>Your Chores</h2>
+                <ul id="choresList">
+                    <!-- Chores will be added here dynamically -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html> 

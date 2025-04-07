@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --background-color: #f8f9fa;
+    --text-color: #2c3e50;
+    --border-color: #ddd;
+    --card-background: white;
+    --hover-color: #f8f9fa;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.grid-header, .earnings-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.points-badge {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.earnings-cell.earnings {
+    color: var(--success-color);
+}
+
+.earnings-cell.tithing {
+    color: var(--danger-color);
+}
+
+.reset-btn {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b;
+}
+
+.theme-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.theme-btn:hover {
+    background-color: #2980b9;
+} 
