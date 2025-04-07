@@ -6,13 +6,16 @@
     <title>Chorey</title>
     <script>
         // Set the base URL for assets
-        document.documentElement.style.setProperty('--base-url', 
-            window.location.hostname === 'beston3000.github.io' ? '/Chorey' : ''
-        );
+        const baseUrl = window.location.hostname === 'beston3000.github.io' ? '/chorey' : '';
+        document.documentElement.style.setProperty('--base-url', baseUrl);
     </script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="themes/default.css" id="theme-stylesheet">
+    <link rel="stylesheet" id="theme-stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // Set initial theme stylesheet href
+        document.getElementById('theme-stylesheet').href = `${baseUrl}/themes/default.css`;
+    </script>
 </head>
 <body>
     <nav class="main-nav">
