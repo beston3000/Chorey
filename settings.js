@@ -1,3 +1,6 @@
+// Get the base URL for assets
+const baseUrl = window.location.hostname === 'beston3000.github.io' ? '/Chorey' : '';
+
 document.addEventListener('DOMContentLoaded', () => {
     const themeStylesheet = document.getElementById('theme-stylesheet');
     const themeButtons = document.querySelectorAll('.theme-btn');
@@ -5,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load saved theme from localStorage
     const savedTheme = localStorage.getItem('theme') || 'default';
-    themeStylesheet.href = `themes/${savedTheme}.css`;
+    themeStylesheet.href = `${baseUrl}/themes/${savedTheme}.css`;
 
     // Add active class to current theme button
     themeButtons.forEach(button => {
@@ -18,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeButtons.forEach(button => {
         button.addEventListener('click', () => {
             const theme = button.dataset.theme;
-            themeStylesheet.href = `themes/${theme}.css`;
+            themeStylesheet.href = `${baseUrl}/themes/${theme}.css`;
             localStorage.setItem('theme', theme);
             
             // Update active state of buttons

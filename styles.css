@@ -1,3 +1,7 @@
+:root {
+    --base-url: '';
+}
+
 @font-face {
     font-family: 'Delius';
     src: url('fonts/delius-regular.ttf') format('truetype');
