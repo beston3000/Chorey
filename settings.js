@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load saved theme from localStorage
     const savedTheme = localStorage.getItem('theme') || 'default';
-    themeStylesheet.href = `themes/${savedTheme}.css`;
+    themeStylesheet.href = `/Chorey/themes/${savedTheme}.css`;
 
     // Add active class to current theme button
     themeButtons.forEach(button => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeButtons.forEach(button => {
         button.addEventListener('click', () => {
             const theme = button.dataset.theme;
-            themeStylesheet.href = `themes/${theme}.css`;
+            themeStylesheet.href = `/Chorey/themes/${theme}.css`;
             localStorage.setItem('theme', theme);
             
             // Update active state of buttons
