@@ -3,5 +3,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load saved theme from localStorage
     const savedTheme = localStorage.getItem('theme') || 'default';
-    themeStylesheet.href = `Themes/${savedTheme}.css`;
+    themeStylesheet.href = `themes/${savedTheme}.css`;
 }); 
